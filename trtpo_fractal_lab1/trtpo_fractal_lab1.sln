@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trtpo_fractal_lab1", "trtpo_fractal_lab1\trtpo_fractal_lab1.csproj", "{58F9B80A-201C-4E40-A74E-0E9E23517BE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestComplexOperations", "TestComplexOperations\TestComplexOperations.csproj", "{FEB8BEE9-7CCA-449B-A860-1899E71D0DF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{58F9B80A-201C-4E40-A74E-0E9E23517BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F9B80A-201C-4E40-A74E-0E9E23517BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58F9B80A-201C-4E40-A74E-0E9E23517BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB8BEE9-7CCA-449B-A860-1899E71D0DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB8BEE9-7CCA-449B-A860-1899E71D0DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB8BEE9-7CCA-449B-A860-1899E71D0DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB8BEE9-7CCA-449B-A860-1899E71D0DF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
