@@ -48,14 +48,19 @@ namespace trtpo_fractal_lab1
             for (int y = 0; y < FractalPictureBox.Height; ++y)
                 for (int x = 0; x < FractalPictureBox.Width; ++x)
                 {
-
                     int i = getMandelbrod(x, y);
-
-                    btmImage.SetPixel(x, y, Color.FromArgb(i * 2 % 256,
-                       i % 256, i * 10 % 256));
+                    btmImage.SetPixel(x, y, Color.FromArgb(i * RedTrackBar.Value % 256,
+                       i * GreenTrackBar.Value % 256, i * BlueTrackBar.Value % 256));
                 }
             FractalPictureBox.Refresh();
         }
         private void GenerateFractalButton_Click(object sender, EventArgs e) => GenerateFractal();
+
+        private void RedTrackBar_ValueChanged(object sender, EventArgs e) => RedNumericUpDown.Value = RedTrackBar.Value;
+        private void GreenTrackBar_ValueChanged(object sender, EventArgs e) => GreenNumericUpDown.Value = GreenTrackBar.Value;
+        private void BlueTrackBar_ValueChanged(object sender, EventArgs e) => BlueNumericUpDown.Value = BlueTrackBar.Value;
+        private void RedNumericUpDown_ValueChanged(object sender, EventArgs e) => RedTrackBar.Value = Convert.ToInt32(RedNumericUpDown.Value);
+        private void GreenNumericUpDown_ValueChanged(object sender, EventArgs e) => GreenTrackBar.Value = Convert.ToInt32(GreenNumericUpDown.Value);
+        private void BlueNumericUpDown_ValueChanged(object sender, EventArgs e) => BlueTrackBar.Value = Convert.ToInt32(BlueNumericUpDown.Value);
     }
 }
