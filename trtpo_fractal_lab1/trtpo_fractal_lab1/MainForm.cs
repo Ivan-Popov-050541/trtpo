@@ -30,7 +30,7 @@ namespace trtpo_fractal_lab1
             int i = 0;
             while (i < 255 && z.getAbs() < 4.0)
             {
-                z = z * z + c;
+                z = z.sqr() - c;
                 ++i;
             }
             return i;
@@ -43,7 +43,7 @@ namespace trtpo_fractal_lab1
             int i = 0;
             while (i < 255 && z.getAbs() < 4.0)
             {
-                z = z * z + c;
+                z = z.sqr() - c;
                 ++i;
             }
             return i;

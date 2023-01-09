@@ -16,7 +16,9 @@ namespace trtpo_fractal_lab1
             im = ig;
         }
         public static Complex operator +(Complex a, Complex b) => new Complex(a.re + b.re, a.im + b.im);
+        public static Complex operator -(Complex a, Complex b) => new Complex(a.re - b.re, a.im - b.im);
         public static Complex operator *(Complex a, Complex b) => new Complex(a.re * b.re - a.im * b.im, 2 * a.re * b.im);
         public double getAbs() => re * re + im * im;
+        public Complex sqr() => new Complex(re * re - im * im, 2 * re * im);
     }
 }
