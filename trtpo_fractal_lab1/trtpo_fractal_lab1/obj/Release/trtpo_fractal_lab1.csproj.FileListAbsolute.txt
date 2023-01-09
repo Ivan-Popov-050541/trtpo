@@ -1,0 +1,10 @@
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\bin\Release\trtpo_fractal_lab1.exe.config
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\bin\Release\trtpo_fractal_lab1.exe
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\bin\Release\trtpo_fractal_lab1.pdb
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.csproj.AssemblyReference.cache
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.MainForm.resources
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.Properties.Resources.resources
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.csproj.GenerateResource.cache
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.csproj.CoreCompileInputs.cache
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.exe
+C:\ivan\BSUIR\sem_6\TRiTPO\labs\trtpo\trtpo_fractal_lab1\trtpo_fractal_lab1\obj\Release\trtpo_fractal_lab1.pdb
