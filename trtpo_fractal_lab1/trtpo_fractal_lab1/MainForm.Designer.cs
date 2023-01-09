@@ -41,6 +41,14 @@ namespace trtpo_fractal_lab1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ImaginaryTextBox = new System.Windows.Forms.TextBox();
+            this.RealTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.JuliaCheckBox = new System.Windows.Forms.CheckBox();
+            this.MandelCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.FractalPictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BlueNumericUpDown)).BeginInit();
@@ -49,6 +57,8 @@ namespace trtpo_fractal_lab1
             ((System.ComponentModel.ISupportInitialize)(this.GreenTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedTrackBar)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // FractalPictureBox
@@ -199,12 +209,102 @@ namespace trtpo_fractal_lab1
             this.label1.TabIndex = 2;
             this.label1.Text = "Red";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.ImaginaryTextBox);
+            this.groupBox3.Controls.Add(this.RealTextBox);
+            this.groupBox3.Location = new System.Drawing.Point(12, 374);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(410, 129);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Settings for Julia";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 27);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Imaginary";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 27);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Real";
+            // 
+            // ImaginaryTextBox
+            // 
+            this.ImaginaryTextBox.Location = new System.Drawing.Point(134, 77);
+            this.ImaginaryTextBox.MaxLength = 8;
+            this.ImaginaryTextBox.Name = "ImaginaryTextBox";
+            this.ImaginaryTextBox.Size = new System.Drawing.Size(100, 34);
+            this.ImaginaryTextBox.TabIndex = 1;
+            this.ImaginaryTextBox.Text = "0,6";
+            this.ImaginaryTextBox.MaxLength = 8;
+            this.ImaginaryTextBox.Leave += new System.EventHandler(this.ImaginaryTextBox_Leave);
+            // 
+            // RealTextBox
+            // 
+            this.RealTextBox.Location = new System.Drawing.Point(134, 37);
+            this.RealTextBox.MaxLength = 8;
+            this.RealTextBox.Name = "RealTextBox";
+            this.RealTextBox.Size = new System.Drawing.Size(100, 34);
+            this.RealTextBox.TabIndex = 0;
+            this.RealTextBox.Text = "-0,4";
+            this.RealTextBox.MaxLength = 8; 
+            this.RealTextBox.Leave += new System.EventHandler(this.RealTextBox_Leave);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.JuliaCheckBox);
+            this.groupBox2.Controls.Add(this.MandelCheckBox);
+            this.groupBox2.Location = new System.Drawing.Point(12, 243);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(410, 125);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Fractal Type";
+            // 
+            // JuliaCheckBox
+            // 
+            this.JuliaCheckBox.AutoSize = true;
+            this.JuliaCheckBox.Location = new System.Drawing.Point(24, 70);
+            this.JuliaCheckBox.Name = "JuliaCheckBox";
+            this.JuliaCheckBox.Size = new System.Drawing.Size(78, 31);
+            this.JuliaCheckBox.TabIndex = 1;
+            this.JuliaCheckBox.Text = "Julia";
+            this.JuliaCheckBox.UseVisualStyleBackColor = true;
+            this.JuliaCheckBox.CheckedChanged += new System.EventHandler(this.JuliaCheckBox_CheckedChanged);
+            // 
+            // MandelCheckBox
+            // 
+            this.MandelCheckBox.AutoSize = true;
+            this.MandelCheckBox.Checked = true;
+            this.MandelCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.MandelCheckBox.Location = new System.Drawing.Point(24, 33);
+            this.MandelCheckBox.Name = "MandelCheckBox";
+            this.MandelCheckBox.Size = new System.Drawing.Size(146, 31);
+            this.MandelCheckBox.TabIndex = 0;
+            this.MandelCheckBox.Text = "Mandelbrot";
+            this.MandelCheckBox.UseVisualStyleBackColor = true;
+            this.MandelCheckBox.CheckedChanged += new System.EventHandler(this.MandelCheckBox_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1176, 536);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GenerateFractalButton);
             this.Controls.Add(this.FractalPictureBox);
@@ -224,6 +324,10 @@ namespace trtpo_fractal_lab1
             ((System.ComponentModel.ISupportInitialize)(this.GreenTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedTrackBar)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -242,6 +346,14 @@ namespace trtpo_fractal_lab1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox ImaginaryTextBox;
+        private System.Windows.Forms.TextBox RealTextBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.CheckBox JuliaCheckBox;
+        private System.Windows.Forms.CheckBox MandelCheckBox;
     }
 }
 
